@@ -61,8 +61,8 @@ public class ProductService {
                             ObjectId objectId = new ObjectId();
                             log.info("Generated ObjectId: {}", objectId.toHexString());
                             product.setId(objectId.toHexString());
-                            product.setId1(ObjectIdConverter.generateInt64(objectId));
-                            product.setId2(ObjectIdConverter.generateDecimal128(objectId));
+                            product.setId1(ObjectIdConverter.generateLong(objectId));
+                            product.setId2(ObjectIdConverter.generateBigInteger(objectId));
                             log.info("id: {}, id1: {}, id2: {}", product.getId(), product.getId1(), product.getId2());
                             products.add(product);
                         }
