@@ -1,5 +1,7 @@
 # 📊 ObjectId vs Int64 vs Decimal128 in MongoDB & Java
 
+DISCLAIMER: This not MongoDB oficial implementation.
+
 When converting or compacting identifiers, it’s important to understand how much space each representation consumes and what numeric ranges are available.
 
 ---
